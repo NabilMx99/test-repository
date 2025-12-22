@@ -1,2 +1,6 @@
 this is conflicted text from main
 this is conflicted text from feature
+
+Change A
+Change B
+Change C
