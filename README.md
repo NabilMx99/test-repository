@@ -90,3 +90,34 @@ This is a second line.
 
 > [!CAUTION]  
 > This is cautious
+
+Mathematical expressions
+
+$x = x_0 + vt$\
+$x = x_0 + v_0t + \frac{1}{2}at^2$\
+$v = v_0 + at$\
+$v^2 = v_0^2 + 2a\Delta x$\
+$\Sigma F = 0$\
+$\Sigma F = ma$\
+$W = mg$\
+$F = -kx$\
+$F = k\frac{|q_1q_2|}{r^2} = \frac{1}{4\pi\epsilon_0}\frac{|q_1q_2|}{r^2}$\
+$F = G \frac{m_1m_2}{r^2}$\
+$F = BIL\sin \theta$\
+$KE = \frac{1}{2}mv^2$\
+$PE = mgh$\
+$ME = KE + PE$\
+$I = \frac{Q}{t}$\
+$Q = Ne$\
+$V = IR$\
+$P = I^2R$\
+$P = \frac{V^2}{R}$\
+$P = VI$\
+$C = \frac{Q}{V}$\
+$R = \rho\frac{l}{A}$\
+$\Sigma Iin = \Sigma Iout$
+
+$$\sum_{i=1}^n R_i = R_1 + R_2 + ... + R_n$$
+$$\sum_{i=1}^n \frac{1}{R_i} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}$$
+$$\sum_{i=1}^n C_i = C_1 + C_2 + ... + C_n$$
+$$\sum_{i=1}^n \frac{1}{C_i} = \frac{1}{C_1} + \frac{1}{C_2} + ... + \frac{1}{C_n}$$
