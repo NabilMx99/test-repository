@@ -1,0 +1,3 @@
+[submodule "simplegit-progit"]
+	path = simplegit-progit
+	url = https://github.com/schacon/simplegit-progit.git
