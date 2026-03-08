@@ -1,0 +1,33 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        h1 {
+            position: relative;
+            left: 600px;
+            top: 225px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Github Pages! 🎉</h1>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        window.onload = function () {
+            confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+        };
+    </script>
+</body>
+</html>
