@@ -121,3 +121,5 @@ $$\sum_{i=1}^n R_i = R_1 + R_2 + ... + R_n$$
 $$\sum_{i=1}^n \frac{1}{R_i} = \frac{1}{R_1} + \frac{1}{R_2} + ... + \frac{1}{R_n}$$
 $$\sum_{i=1}^n C_i = C_1 + C_2 + ... + C_n$$
 $$\sum_{i=1}^n \frac{1}{C_i} = \frac{1}{C_1} + \frac{1}{C_2} + ... + \frac{1}{C_n}$$
+
+[![learn-github-actions](https://github.com/NabilMx99/test-repository/actions/workflows/learn-github-actions.yml/badge.svg)](https://github.com/NabilMx99/test-repository/actions/workflows/learn-github-actions.yml)
