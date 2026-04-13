@@ -1,0 +1,40 @@
+{
+	"name": "C# (.NET)",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:2-10.0",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+			"version": "latest"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.fontSize": 16,
+				"editor.fontFamily": "Cascadia Code",
+				"editor.codeLens": false,
+				"workbench.colorTheme": "Panda Syntax",
+				"terminal.integrated.fontSize": 16,
+				"explorer.compactFolders": false,
+				"code-runner.runInTerminal": true,
+				"code-runner.clearPreviousOutput": true,
+				"code-runner.executorMap": {
+					"csharp": "cd $dir && dotnet run"
+				}
+			},
+			"extensions": [
+				"tinkertrain.theme-panda",
+				"formulahendry.code-runner"
+			]
+		},
+		"codespaces": {
+			"openFiles": [
+				"src/App/Program.cs"
+			]
+		}
+	},
+	"postCreateCommand": "dotnet --version && cd src/App && dotnet restore && dotnet run"
+}
