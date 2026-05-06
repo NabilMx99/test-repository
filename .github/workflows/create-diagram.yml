@@ -1,0 +1,17 @@
+name: Create Repo Diagram
+
+on: workflow_dispatch
+
+jobs:
+  create-diagram:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Create diagram
+        uses: githubocto/repo-visualizer@0.9.1
+        with:
+          excluded_paths: ".devcontainer,.github"
+          commit_message: "Repo visualizer: Make diagram"
