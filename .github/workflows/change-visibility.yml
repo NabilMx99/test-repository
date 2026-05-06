@@ -1,0 +1,24 @@
+name: Change Repo Visibility
+
+on:
+  workflow_dispatch:
+    inputs:
+      visibility:
+        description: 'Select the desired visibility for the repository.'
+        required: true
+        default: 'private'
+        type: choice
+        options:
+          - private
+          - public
+
+jobs:
+  change-visibility:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Change visibility
+        uses: JustinBird/github-visibility-action@v0.0.2
+        with:
+          token: ${{ secrets.ADMINISTRATION_TOKEN }}
+          visibility: ${{ github.event.inputs.visibility }}
