@@ -1,0 +1,38 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      dotnet-version:
+        description: '.NET SDK Version'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: ${{ inputs.dotnet-version }}
+
+      - name: Create console app
+        run: |
+          mkdir -p src
+          cd src
+          dotnet new console -n App
+
+      - name: Modify Program.cs content
+        run: |
+          cd src/App
+          echo 'Console.WriteLine("Greetings, Nabil.");' > Program.cs
+
+      - name: Build and run .NET project
+        run: |
+          cd src/App
+          dotnet run
